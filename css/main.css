@@ -36,7 +36,26 @@ body {
         background-position: 0 50%;
     }
 }
+/* INTRODUCCION */
+.background-image {
+    background-image: url('../img/BIM_01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 50%;
+    position: absolute;  /* La imagen de fondo ahora es absoluta */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  
 
+    /* background-repeat: no-repeat.;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
 /* NAV */
 
 
