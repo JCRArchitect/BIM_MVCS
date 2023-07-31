@@ -151,3 +151,52 @@ body {
 }
 
 
+/* DASHBOARD */
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+  .gradient-border {
+    border-width: 2px;
+    border-style: solid;
+    border-image-source: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+    animation: gradient 3s ease-in-out infinite;
+  }
+
+.container {
+    padding: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+    padding: 1em;
+  }
+  
+  .card {
+    border: 2px solid;
+    border-image-source: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+    animation: gradient 3s ease-in-out infinite;
+    overflow: hidden;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 1em;
+  }
+  
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
