@@ -20,6 +20,7 @@ img {
 }
 
 body {
+    font-family: Roboto, Arial, sans-serif;
     background: linear-gradient(90deg, #e7e7e7, #D1CECD, #ffffff );
     animation: color 12s ease-in-out infinite;
 }
@@ -30,6 +31,7 @@ body {
         background-position: 0 50%;
     }
     50% {
+
         background-position: 100 50%;
     }
     100% {
@@ -40,7 +42,7 @@ body {
 .background-image {
     background-image: url('../img/BIM_01.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     opacity: 50%;
     position: absolute;  /* La imagen de fondo ahora es absoluta */
@@ -65,6 +67,7 @@ body {
    background: linear-gradient(90deg, #e7e7e7, #D1CECD, #ffffff );
     animation: color 12s ease-in-out infinite;
     font-size: 0.8rem;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -168,6 +171,11 @@ body {
   }
 
 .container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
     padding: 1rem;
 }
 
@@ -179,11 +187,15 @@ body {
   }
   
   .card {
-    border: 2px solid;
+    border: 1px solid;
+    margin: 1em;
     border-image-source: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red);
     border-image-slice: 1;
     animation: gradient 3s ease-in-out infinite;
     overflow: hidden;
+    width: 75%;
+    max-width: 300px;
+    margin: auto;
   }
   
   .card-img {
@@ -200,3 +212,65 @@ body {
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
   }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+}
+  .card-body {
+    
+    background-color: #000000;
+  }
+
+  .carta{
+    background-color: black;
+  }
+  .card-img-top {
+    display: flex;
+    width: 80%;
+    height: auto;
+    background-color: #000000;
+    align-content: center;
+    
+  }
+  .card-text {
+    font-size: medium;
+    color: white;
+    align-items: center;
+    font-weight: 700;
+    padding: 0.2rem;
+    text-align: center;
+  }
+  .card-date{
+    font-size: small;
+    color: white;
+    align-items: center;
+    font-weight: 400;
+    padding: 0.2rem;
+    text-align: center;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-header{
+        font-size: 0.7rem;
+    }
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+    .nav-item {
+        font-size: 0.8rem;
+    }
+    .dropdown-menu {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+}
