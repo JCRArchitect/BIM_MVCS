@@ -59,7 +59,65 @@ body {
     background-attachment: fixed; */
 }
 /* NAV */
+/* --------------------------- INDEX --------------------------------*/
+.grilla {
+    
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
+    grid-template-areas:
+    "video      video"
+    "quien      productos"
+    "servicios  contacto";
+
+    justify-items: center;
+    align-items: stretch;
+
+}
+.video {
+    grid-area: video;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quien {
+
+}
+
+
+@media (max-width: 578px) {
+
+    .grilla{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+        "video"
+
+    }
+}
+
+
+.main-background {
+    font-family: Roboto, Arial, sans-serif;
+    background: linear-gradient(90deg, #868686, #ffffff);
+    background-size: 200% 200%;
+    animation: Gradient 12s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* --------------------------- INDEX --------------------------------*/
 
 .main-header{
    font-family: roboto, sans-serif;
@@ -154,7 +212,7 @@ body {
 }
 
 
-/* DASHBOARD */
+/* --------------------------- DASHBOARD --------------------------------*/
 
 @keyframes gradient {
     0% {background-position: 0% 50%;}
@@ -273,4 +331,20 @@ body {
 
     }
 
+
+}
+
+@media screen and (max-width: 576px) {
+    .main-header{
+        font-size: 0.5rem;
+    }
+    .navbar-brand {
+        font-size: 0.6rem;
+    }
+    .nav-item {
+        font-size: 0.6rem;
+    }
+    .dropdown-menu {
+        font-size: 0.5rem;
+    }
 }
