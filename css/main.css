@@ -85,6 +85,7 @@ body {
     padding-bottom: 2rem;
     justify-content: center;
     align-items: center;
+    background-image: ;
 }
 
 
@@ -282,13 +283,23 @@ body {
 
   .carta{
     background-color: black;
+    z-index: -1;
   }
+
+  .card mb-4 box-shadow gradient-border {
+    display: flex;
+    align-items: center;
+  }
+
+
   .card-img-top {
     display: flex;
-    width: 80%;
+    width: 100%;
     height: auto;
     background-color: #000000;
     align-content: center;
+    justify-content: center;
+    align-self: center;
     
   }
   .card-text {
