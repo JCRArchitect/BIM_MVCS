@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 font-family:  'Advent Pro', sans-serif;
 
+
+/*---------------- Global CSS --------------*/
 * {
     margin: 0;
     padding: 0;
@@ -8,23 +12,332 @@ font-family:  'Advent Pro', sans-serif;
     list-style: none;
     text-decoration: none;
     
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.active {
+    color: ;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*---------------- Global CSS --------------*/
+/*---------------- Index --------------*/
+
+/*---------------- Navbar --------------*/
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.nav.links li {
+    margin: 0 30px;
+}
+
+
+
+/*---------------- Index_Header --------------*/
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/BIM_Header_Improved.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-weight: bolder;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: rgb(51, 51, 51);
+    text-align: center;
     
 }
+
+.header-content h2 {
+    font-size: 4vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-content h1, .header-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.ctn {
+    padding: 8px 15px;
+    background-color: #5B7DA3;
+    border-radius: 30px;
+    font-family: poppins;
+    color: white;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #fC036B;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 5px;
+    ;
+}
+
+.header-content h1 {
+    font-size: 6.5vmin;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 a {
     color: #000000;
     text-decoration: none
 }
+
+.menu-btn,.close-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/*---------------- Index_Header --------------*/
+
+/*---------------- CONTENT  --------------------------*/
+section {
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.row .col  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+.events .ctn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.innovacion {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.innovacion-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.innovacion-content h1 {
+    font-size: 7vmin;
+}
+.innovacion-content .line{
+    margin-bottom: 50px;
+}
+.innovacion-content p {
+    color: rgb(221, 221, 221);
+}
+.innovacions-content .ctn {
+    margin-top: 40px;
+}
+
+.content-col {
+    width: 40%;
+}
+.image-col {
+    width: 60%;
+}
+
+.col img {
+    max-width: 100%;
+    height: auto; 
+}
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.content-col .line {
+    margin-left: -1px;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+
+/* Celular device */
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /* Events */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    /* explore */
+    .explore-content {
+        width: 100%;
+    }
+    .tours .col {
+        width: 100%;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+}
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+/*---------------- CONTENT  --------------------------*/
+
+
 
 img {
     overflow-clip-margin: content-box;
 }
 
 body {
-    font-family: Roboto, Arial, sans-serif;
     background: linear-gradient(90deg, #e7e7e7, #D1CECD, #ffffff );
     animation: color 12s ease-in-out infinite;
 }
-
 
 
 @keyframes color{
@@ -32,7 +345,6 @@ body {
         background-position: 0 50%;
     }
     50% {
-
         background-position: 100 50%;
     }
     100% {
@@ -43,7 +355,7 @@ body {
 .background-image {
     background-image: url('../img/BIM_01.jpg');
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
     opacity: 50%;
     position: absolute;  /* La imagen de fondo ahora es absoluta */
@@ -60,63 +372,7 @@ body {
     background-attachment: fixed; */
 }
 /* NAV */
-/* --------------------------- INDEX --------------------------------*/
-.grilla {
-    
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 
-    grid-template-areas:
-    "video      video"
-    "quien      productos"
-    "servicios  contacto";
-
-    justify-items: center;
-    align-items: stretch;
-
-}
-.video {
-    grid-area: video;
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    padding-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
-    background-image: ;
-}
-
-
-
-@media (max-width: 578px) {
-
-    .grilla{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-
-        grid-template-areas:
-        "video"
-
-    }
-}
-
-
-.main-background {
-    font-family: Roboto, Arial, sans-serif;
-    background: linear-gradient(90deg, #868686, #ffffff);
-    background-size: 200% 200%;
-    animation: Gradient 12s ease-in-out infinite;
-    z-index: 1;
-}
-
-@keyframes Gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-/* --------------------------- INDEX --------------------------------*/
 
 .main-header{
    font-family: roboto, sans-serif;
@@ -124,7 +380,6 @@ body {
    background: linear-gradient(90deg, #e7e7e7, #D1CECD, #ffffff );
     animation: color 12s ease-in-out infinite;
     font-size: 0.8rem;
-    width: 100%;
 }
 
 .navbar-brand {
@@ -211,7 +466,7 @@ body {
 }
 
 
-/* --------------------------- DASHBOARD --------------------------------*/
+/* DASHBOARD */
 
 @keyframes gradient {
     0% {background-position: 0% 50%;}
@@ -228,11 +483,6 @@ body {
   }
 
 .container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
     padding: 1rem;
 }
 
@@ -244,15 +494,11 @@ body {
   }
   
   .card {
-    border: 1px solid;
-    margin: 1em;
-    border-image-source: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red);
+    border: 2px solid;
+    border-image-source: linear-gradient(270deg, rgb(61, 60, 61), rgb(63, 63, 63), rgb(80, 80, 228), rgb(223, 72, 72), rgb(41, 41, 41), orange, red);
     border-image-slice: 1;
     animation: gradient 3s ease-in-out infinite;
     overflow: hidden;
-    width: 75%;
-    max-width: 300px;
-    margin: auto;
   }
   
   .card-img {
@@ -269,91 +515,3 @@ body {
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
   }
-
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 0.5rem;
-    padding: 0.5rem;
-}
-  .card-body {
-    
-    background-color: #000000;
-  }
-
-  .carta{
-    background-color: black;
-    z-index: -1;
-  }
-
-  .card mb-4 box-shadow gradient-border {
-    display: flex;
-    align-items: center;
-  }
-
-
-  .card-img-top {
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: #000000;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    
-  }
-  .card-text {
-    font-size: medium;
-    color: white;
-    align-items: center;
-    font-weight: 700;
-    padding: 0.2rem;
-    text-align: center;
-  }
-  .card-date{
-    font-size: small;
-    color: white;
-    align-items: center;
-    font-weight: 400;
-    padding: 0.2rem;
-    text-align: center;
-
-  }
-
-  @media screen and (max-width: 768px) {
-    .main-header{
-        font-size: 0.7rem;
-    }
-    .navbar-brand {
-        font-size: 0.8rem;
-    }
-    .nav-item {
-        font-size: 0.8rem;
-    }
-    .dropdown-menu {
-        font-size: 0.7rem;
-    }
-
-    .card {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-
-}
-
-@media screen and (max-width: 576px) {
-    .main-header{
-        font-size: 0.5rem;
-    }
-    .navbar-brand {
-        font-size: 0.6rem;
-    }
-    .nav-item {
-        font-size: 0.6rem;
-    }
-    .dropdown-menu {
-        font-size: 0.5rem;
-    }
-}
